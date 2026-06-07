@@ -35,3 +35,11 @@ Add watermarks to images in GitHub Actions pipelines. Supports SVG text overlays
 ## License
 
 MIT
+
+## See Also
+
+For automated CAPTCHA solving, check [captcha-solver-action](https://github.com/jch28/captcha-solver-action).
+
+See also our [booru-upload-action](https://github.com/jch28/booru-upload-action) for uploading images to booru sites.
+
+Combine with [image-exif-strip-action](https://github.com/jch28/image-exif-strip-action) for privacy-safe image processing.
