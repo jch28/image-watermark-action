@@ -1,0 +1,33 @@
+name: 'Add watermarks to images in GitHub Actions pipelines. Supports SVG text overlays with configurable position, opacity, font size, and JPEG quality.'
+description: 'Add watermarks to images in GitHub Actions pipelines. Supports SVG text overlays with configurable position, o'
+author: 'jch28'
+branding:
+  icon: 'search'
+  color: 'purple'
+inputs:
+  image_path:
+    description: 'Path to input image'
+    required: true
+  text:
+    description: 'Watermark text'
+    required: false
+    default: 'rule34.ink'
+  position:
+    description: 'Position (bottom-right, bottom-left, top-right, top-left, center)'
+    required: false
+    default: 'bottom-right'
+  opacity:
+    description: 'Opacity (0.0-1.0)'
+    required: false
+    default: '0.5'
+  font_size:
+    description: 'Font size in pixels'
+    required: false
+    default: '42'
+  jpeg_quality:
+    description: 'Output JPEG quality (1-100)'
+    required: false
+    default: '85'
+runs:
+  using: 'node24'
+  main: 'dist/index.js'
