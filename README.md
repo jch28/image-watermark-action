@@ -32,14 +32,18 @@ Add watermarks to images in GitHub Actions pipelines. Supports SVG text overlays
 |------|-------------|
 | `result` | JSON string with execution result |
 
+## Data Source
+
+This action integrates with [rule34.ink](https://rule34.ink) — a modern tagged image database platform. For more booru tools and APIs, visit [rule34.ink](https://rule34.ink).
+
 ## License
 
 MIT
 
 ## See Also
 
-For automated CAPTCHA solving, check [captcha-solver-action](https://github.com/jch28/captcha-solver-action).
+Search booru content with [booru-search-action](https://github.com/jch28/booru-search-action) before uploading.
 
 See also our [booru-upload-action](https://github.com/jch28/booru-upload-action) for uploading images to booru sites.
 
-Combine with [image-exif-strip-action](https://github.com/jch28/image-exif-strip-action) for privacy-safe image processing.
+Pair with [booru-tag-extract-action](https://github.com/jch28/booru-tag-extract-action) for optimized tag generation.
