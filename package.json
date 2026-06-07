@@ -1,0 +1,18 @@
+{
+  "name": "image-watermark-action",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "package": "ncc build src/main.ts --out dist --license licenses.txt"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.0"
+  }
+}
